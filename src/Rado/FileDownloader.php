@@ -51,7 +51,10 @@ class FileDownloader
     {
         $this->logger->saveLog("Rozpoczecie pobierania pliku: {$url}");
 
-        return file_get_contents($url);
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', $url);
+
+        return $response->getBody()->getContents();
     }
 
     /**
