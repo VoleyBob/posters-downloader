@@ -1,13 +1,10 @@
 {
-    "name": "rado/class",
-    "authors": [
-        {
-            "name": "Radosław Ziemniewicz",
-            "email": "radoslaw.ziemniewicz@home.com.pl"
-        }
-    ],
-    "require": {},
-        "autoload": {
-            "psr-4": {"Rado\\": "src/Rado"}
-    	}
+    "name": "voleybob/second",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {"Rado\\": "src/Rado"}
+    }
 }
